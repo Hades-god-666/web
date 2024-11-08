@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    user-select: none; /* Impide seleccionar texto en toda la página */
+    cursor: default; /* Cambia el cursor a la forma predeterminada */
+    background-color: darkgray; /* Color de fondo para toda la página */
+}
+
+/* Permitir la selección de texto en párrafos, enlaces y otros elementos específicos */
+p, a, span {
+    user-select: text; /* Permite seleccionar texto en estos elementos */
+}
+
+/* Navegación */
+nav {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    padding: 15px 20px;
+    font-family: 'Pirata One', cursive;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: darkgoldenrod;
+}
+
+footer {
+    background-color: #222; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centrado del texto */
+    padding: 20px 20px; /* Espaciado interno */
+    position: relative; /* No fijarlo en la parte inferior */
+    width: 100%; /* Ocupa todo el ancho */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Sombra suave alrededor */
+    font-family: 'Pirata One', cursive; /* Tipografía 'Pirata One' */
+    transition: all 0.3s ease; /* Efectos de transición */
+}
+
+/* Efecto hover para el footer */
+footer:hover {
+    background-color: #333; /* Fondo más oscuro al pasar el mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Sombra más intensa */
+    transform: scale(1.02); /* Efecto de aumento al pasar el cursor */
+}
+
+/* Estilo para el texto dentro del footer */
+footer p {
+    font-size: 1rem; /* Tamaño de fuente ajustado */
+    line-height: 1.8; /* Espaciado entre líneas */
+    text-align: center; /* Centrar el texto */
+    color: #f1f1f1; /* Color de texto suave */
+    margin-bottom: 20px; /* Espacio debajo del párrafo */
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro translúcido */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra de fondo */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); /* Sombra del texto */
+}
+
+/* Efecto hover para el texto del footer */
+footer p:hover {
+    color: #ffcc00; /* Cambio de color del texto a dorado */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Sombra más fuerte */
+    transform: scale(1.02); /* Aumento sutil */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo un poco más oscuro */
+}
+
+
+/* Estilo para los enlaces dentro del footer */
+footer a {
+    color: #ffcc00; /* Color dorado para los enlaces */
+    text-decoration: none; /* Quitar subrayado */
+    transition: color 0.3s ease; /* Transición suave al cambiar el color */
+}
+
+footer a:hover {
+    color: #fff; /* Color blanco al pasar el cursor */
+    text-decoration: underline; /* Subrayar al hacer hover */
+}
+
+/* Contenedor principal del Aviso de Privacidad */
+.privacy-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro translúcido */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: #f1f1f1; /* Color de texto claro */
+    font-size: 16px;
+}
+
+/* Estilos para los encabezados */
+.privacy-container h1, .privacy-container h2 {
+    font-family: 'Pirata One', cursive;
+    color: darkgoldenrod; /* Color dorado para los encabezados */
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra en los encabezados */
+}
+
+.privacy-container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.privacy-container h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Estilo para los párrafos */
+.privacy-container p {
+    font-size: 1.1rem;
+    line-height: 1.8; /* Aumento del espaciado entre líneas */
+    text-align: justify; /* Justificar el texto */
+    color: #f1f1f1; /* Color del texto */
+    margin-bottom: 20px; /* Espacio debajo de los párrafos */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro translúcido para resaltar el texto */
+    padding: 20px; /* Espaciado alrededor del texto */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Sombra para darle profundidad */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
+    transition: all 0.3s ease; /* Transición para efectos de hover */
+}
+
+/* Efecto hover en los párrafos */
+.privacy-container p:hover {
+    color: darkgoldenrod; /* Cambio de color a dorado */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9); /* Sombra de texto más fuerte */
+    transform: scale(1.02); /* Efecto de zoom */
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo más oscuro al pasar el ratón */
+}
+
+/* Estilo para los enlaces dentro de la sección de privacidad */
+.privacy-container a {
+    color: #f1f1f1;
+    text-decoration: none;
+    border-bottom: 1px solid #f1f1f1; /* Línea debajo del enlace */
+    transition: all 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+/* Efecto hover en los enlaces */
+.privacy-container a:hover {
+    color: darkgoldenrod;
+    border-bottom: 1px solid darkgoldenrod; /* Cambio de color en la línea debajo del enlace */
+}
+
+/* Estilo para las listas dentro de la sección de privacidad */
+.privacy-container ul {
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.privacy-container ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #f1f1f1; /* Color de texto claro */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro translúcido */
+    padding: 5px;
+    border-radius: 5px; /* Bordes redondeados en las listas */
+}

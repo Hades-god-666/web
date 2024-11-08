@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNAKE PIT TATTOOS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Pirata+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">
+        <img src="IMG/WhatsApp_Image_2024-10-07_at_9.21.18_AM-removebg-preview.png" alt="Logo de Tatuajes">
+    </div>
+    <ul>
+        <li><a href="INDEX.HTML">INICIO</a></li>
+        <li><a href="#GALERIA">GALERIA</a></li>
+        <li><a href="#TATUADORES">TATUADORES</a></li>
+        <li><a href="#CONTACTO">CONTACTO</a></li> <!-- Enlace al formulario de contacto -->
+    </ul>
+</nav>
+
+<div class="background-section">
+    <div class="text-overlay">Agenda tu tatuaje</div>
+</div>
+
+<div class="description-container">
+    <div class="description">
+        <h2>Snake Pit Tattoos</h2>
+        <p>
+            En SNAKE PIT TATTOOS, somos un estudio de tatuajes de élite en Ixtapaluca, dentro de la Universidad UPEM. 
+    Creamos tatuajes únicos y personalizados, con una técnica y calidad que superan los estándares convencionales.
+    Nuestro equipo de artistas no solo tiene un gran dominio de diversas técnicas, sino que cada uno tiene su propio estilo: 
+    desde lo tradicional y bold, pasando por líneas finas, blackwork, realismo, geométrico, hasta lettering. 
+    Creemos en la libertad artística** y defendemos la diversidad en el arte, promoviendo siempre una conexión humana profunda
+    con cada persona que cruza nuestras puertas. ¡Tu tatuaje será tan único como tú!
+        </p>
+    </div>
+    <div class="image-right">
+        <img src="https://i.pinimg.com/736x/bc/52/88/bc528822596f4eb29db58e689f697780.jpg" alt="Imagen relacionada" />
+    </div>
+</div>
+
+<div class="video">
+    <iframe src="https://www.youtube.com/embed/c0w8qC_peO0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="gallery">
+    <h2 id="GALERIA" class="gallery-title">Galería de Tatuajes</h2>
+    <div class="gallery-grid">
+        <img src="https://img.freepik.com/fotos-premium/mujer-tatuaje-brazo-esta-apoyada-contra-poste_783884-42522.jpg" alt="Tatuaje 1" onclick="showOverlay(this)">
+        <img src="https://img.freepik.com/fotos-premium/chica-tatuaje-espalda_583952-30226.jpg" alt="Tatuaje 2" onclick="showOverlay(this)">
+        <img src="https://i.pinimg.com/736x/6d/a0/ad/6da0ad00e14efdea27f936e25a18f994.jpg" alt="Tatuaje 3" onclick="showOverlay(this)">
+        <img src="https://plus.unsplash.com/premium_photo-1674609189119-23d884a80fff?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aG9tYnJlJTIwZGVsJTIwdGF0dWFqZXxlbnwwfHwwfHx8MA%3D%3D" alt="Tatuaje 4" onclick="showOverlay(this)">
+        <img src="https://i.pinimg.com/236x/f3/62/70/f36270a5bfe4a0187c4a48fd98e13852.jpg" alt="Tatuaje 5" onclick="showOverlay(this)">
+        <img src="https://i.pinimg.com/474x/c7/52/9c/c7529c83644a0926fd5c39b8ba710481.jpg" alt="Tatuaje 6" onclick="showOverlay(this)">
+        <img src="https://img.freepik.com/fotos-premium/jovenes-tatuadas-muestran-belleza-sensualidad-vida-nocturna-generada-inteligencia-artificial_188544-81636.jpg" alt="Tatuaje 7" onclick="showOverlay(this)">
+        <img src="https://img.freepik.com/fotos-premium/retrato-brutal-mujer-hipster-afroamericana-tatuaje-cara-mirando-camara-al-aire-libre_305419-6532.jpg" alt="Tatuaje 8" onclick="showOverlay(this)">
+        <img src="https://i.pinimg.com/236x/08/3d/b6/083db61e6b7eb713ab83884834cec047.jpg" alt="Tatuaje 9" onclick="showOverlay(this)">
+    </div>
+</div>
+
+<h2 id="TATUADORES" class="tatuadores-title">Tatuadores</h2>
+
+<div class="cards-container">
+    <div class="card">
+        <h3>OSCAR RIVERA</h3>
+        <p>10 AÑOS DE EXPERINCIA</p>
+        <img src="https://img.freepik.com/fotos-premium/tatuador-profesional-haciendo-tatuajes-estudio-tatuajes_257488-2821.jpg" alt="Tatuador 1">
+    </div>
+    <div class="card">
+        <h3>OMAR OLVERA</h3>
+        <p>6 AÑOS DE EXPERIENCIA</p>
+        <img src="https://img.freepik.com/fotos-premium/tatuador-su-maquina-tatuando-brazo-diseno-dibujado-concepto-arte-diseno_255667-21286.jpg" alt="Tatuador 2">
+    </div>
+    <div class="card">
+        <h3>RICHARD OLIVERA</h3>
+        <p>9 AÑOS DE EXPERIENCIA</p>
+        <img src="https://maroviana.com.br/wp-content/uploads/2021/04/9ada5d4b-2aec-4ae8-822a-161e33b03754.jpg" alt="Tatuador 3">
+    </div>
+</div>
+
+<div class="overlay" id="imageOverlay">
+    <img id="overlayImage" src="" alt="Imagen ampliada">
+</div>
+
+<div class="sabias-container">
+    <div class="sabias-image-container">
+        <img src="https://dam.ngenespanol.com/wp-content/uploads/2021/10/Otzi1.jpg" alt="Imagen sobre tatuajes antiguos" class="sabias-image">
+    </div>
+    <div class="sabias-text">
+        <h2 id="Sabias" class="sabias">Sabías que...</h2>
+        <p>El arte del tatuaje tiene una historia muy antigua. Se han encontrado restos de cuerpos momificados con tatuajes que datan de hace más de 5,000 años.</p>
+        <p>Uno de los ejemplos más conocidos es Ötzi, el Hombre de Hielo, un cuerpo descubierto en los Alpes que tenía más de 60 tatuajes, algunos de los cuales se cree que estaban relacionados con tratamientos médicos.</p>
+        <p>¡Los tatuajes han sido parte de la cultura humana durante milenios!</p>
+    </div>
+</div>
+
+<!-- Agregar el id CONTACTO en la sección del formulario de contacto -->
+<section id="CONTACTO">
+    <div class="contact-container">
+        <div class="contact-image">
+            <img src="IMG/Screenshot 2024-11-05 220229.png" alt="maps">
+        </div>
+        
+        <div class="contact-form">
+            <h2 class="contact-title">Contacto</h2>
+            <form action="#" method="post" id="contactForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+                
+                <label for="phone">Número de Teléfono:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Ingresa tu número de teléfono" required>
+                
+                <label for="design">Descripción del Diseño:</label>
+                <textarea id="design" name="design" rows="5" placeholder="Describe el diseño que deseas" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2024 SNAKE PIT TATTOOS. Todos los derechos reservados.</p>
+    <p><a href="privacidad.html" class="aviso-privacidad" style="color: #fff; text-decoration: none;">Aviso de Privacidad</a></p>
+</footer>
+
+
+
+<script>
+    // Función para manejar el envío del formulario
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Evitar el envío por defecto
+
+        // Limpiar el formulario después de enviarlo
+        this.reset();
+    });
+</script>
+
+</body>
+</html>
